@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+  themes: all;
+};
+
+  
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #e0e0e0;
+}
+::-webkit-scrollbar-thumb{
+  background: #888;
+}
+::-webkit-scrollbar-track:hover{
+  background: #555;
+}
+
+.ps-menu-button:hover {
+  background: none !important;
+  color: inherit !important;
+}
+
+.ps-menu-button:hover svg {
+  color: inherit !important;
+}
+
+/* Submenu dropdown background */
+.ps-submenu-content {
+  background-color: hsl(var(--b2)) !important;
+  color: hsl(var(--bc)) !important;
+}
+
+/* Menu button default */
+.ps-submenu-content .ps-menu-button {
+  color: hsl(var(--bc)) !important;
+  background-color: transparent !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* HOVER FIX */
+.ps-submenu-content .ps-menu-button:hover {
+  background-color: hsl(var(--b3)) !important;
+  color: hsl(var(--bc)) !important;
+}
+
+/* Icon hover fix */
+.ps-submenu-content .ps-menu-button:hover svg {
+  color: hsl(var(--bc)) !important;
+}
+
+
